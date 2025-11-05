@@ -1,0 +1,11 @@
+###
+# Calculates values for the following fractions: 1/2, 1/3, ..., 1/10
+# 1/1 = 1.0
+# 1/2 = 0.5
+# 1/3 = 0.3333333333333333
+# ...
+# 1/10 = 0.1
+for i in range(1,11):
+    fraction = 1/i
+
+    print(f'1/{i} = {fraction}')
