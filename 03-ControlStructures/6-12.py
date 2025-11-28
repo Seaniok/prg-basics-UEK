@@ -5,7 +5,13 @@
 # Amount to pay: 170.00
 
 number_of_products = int(input('How many products would you like to buy: '))
-product_price = 40
-
+product_price = int(input('What is the price of the products: '))
+discount = product_price - (product_price*0.25)
 if number_of_products > 2:
-    discount = 80 + number_of_products*0,25
+    amount = (product_price*2) + ((number_of_products-2)*discount)
+else:
+    amount = number_of_products * 40 
+
+print(f'Number of products purchased: {number_of_products}')
+print(f'Product price: {product_price}')
+print(f'Amount to pay: {amount}')

@@ -1,0 +1,9 @@
+# f("Univesity") returns "U-n-i-v-e-r-s-i-t-y"
+# f("UE") returns "U-E"
+# f("x") returns "x"
+# f("") returns ""
+
+def f(text):
+    return '-'.join(text)
+
+print(f('University'))
