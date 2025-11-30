@@ -1,20 +1,12 @@
 # f("Internet of Things") returns "IoT"
 # f("For Your Information") returns "FYI"
-# f("Python") returns "P"
-
+# f("Python) return "P"
 def f(name):
+    name = str(name)
     wynik = ""
-    
-    # 1. Rozbij zdanie na listę słów
-    # "Internet of Things" zamieni się w -> ['Internet', 'of', 'Things']
     slowa = name.split()
-    
-    # 2. Przejdź przez każde słowo z osobna
-    for slowo in slowa:
-        # 3. Weź pierwszą literę tego słowa i dodaj do wyniku
-        wynik = wynik + slowo[0]
-        
+    for char in slowa:
+        wynik = wynik + slowa[0]
     return wynik
-
 print(f("Internet of Things")) 
 # Wynik: "IoT"
