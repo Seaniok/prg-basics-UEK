@@ -5,14 +5,15 @@
 # f("") returns False
 
 def f(password):
-    password_s = str(password)
-    if len(password_s) < 6:
+    password = str(password)
+    if len(password) < 6:
         return False
-    for char in password_s:
-        if password_s.count(char) > 1:
+    
+    for char in password:
+        if password.count(char) > 1:
             return False
-    return True
+    return True 
 
-print(f('A2water3'))
+print(f('""'))
         
 

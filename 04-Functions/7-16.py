@@ -21,6 +21,6 @@ def f(n):
     # Krok 5: Zwrócenie wyniku
     return b
 
-print(f(300))
+print(f(5))
         
         

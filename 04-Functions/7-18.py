@@ -5,10 +5,10 @@
 # "Aprogramminglanguageisasystemofnotationforwritingcomputerprograms"
 
 def f(sentence):
-    wynik = ""                 # 1. Pusty pojemnik na nowy tekst
-    for char in sentence:      # 2. Pętla przez znaki
-        if char != " ":        # 3. Jeśli to NIE jest spacja...
-            wynik += char      # ...doklej znak do wyniku
+    wynik = ''
+    for char in sentence:
+        if char != " ":
+            wynik = wynik + char
     return wynik
 
-print(f("integrated development environment"))
+print(f('integrated development enviroment'))

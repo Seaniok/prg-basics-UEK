@@ -7,5 +7,3 @@ def f(palindrome):
     if palindrome[::-1] == palindrome:
         return True
     return False
-        
-print(f('book'))

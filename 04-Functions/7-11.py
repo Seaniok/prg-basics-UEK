@@ -6,4 +6,4 @@ def f(n1,n2,n3):
         return True
     return False
 
-print(f(5,4,14))
+print(f(5,4,-6))

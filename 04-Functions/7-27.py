@@ -16,6 +16,6 @@ def f(product_code):
     if control_digit == 0:
         return True
     
-    return False
+
 
 print(f('1082'))

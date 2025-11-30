@@ -3,7 +3,6 @@
 
 def f(dice):
     dice_s = str(dice)
-    count = 0
     for char in dice_s:
         if dice_s.count(char)>1:
             return char
