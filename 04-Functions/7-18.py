@@ -7,8 +7,8 @@
 def f(sentence):
     wynik = ''
     for char in sentence:
-        if char != " ":
+        if char != ' ':
             wynik = wynik + char
     return wynik
 
-print(f('integrated development enviroment'))
+print(f('integrated development environment'))

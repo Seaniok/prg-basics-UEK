@@ -4,12 +4,7 @@
 # Number 7 in the range <2,15>: yes
 
 def f(x,y):
-    for number in range(x,y+1):
-        if number in range(x,y+1):
-            return True
-    return False
-
-print(f(2,15))
-range = input('Enter a range: ')
-n = input('Enter a number: ')
-print(f'Number {n} in the range {range}:', f(range))
+    if x in range(x,y+1):
+        return 'yes'
+    return 'no'
+print(f'Number 7 in the range <2,15>:', f(2,15))

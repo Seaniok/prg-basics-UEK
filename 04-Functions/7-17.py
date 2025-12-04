@@ -4,6 +4,10 @@
 
 def f(palindrome):
     palindrome = str(palindrome)
-    if palindrome[::-1] == palindrome:
-        return True
+    for char in palindrome:
+        if palindrome[::-1] == palindrome:
+            return True
     return False
+
+print(f('radar'))
+    

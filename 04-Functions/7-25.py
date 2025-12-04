@@ -5,9 +5,9 @@
 
 def f(x,y):
     wynik = 0
-    for number in range(x,y+1):
-        if number % 6 == 0 and number % 4 != 0:
-            wynik = wynik + number
+    for x in range(x,y+1):
+        if x % 6 == 0 and x % 4 != 0:
+            wynik = wynik + x
     return wynik
 
 print(f(1,20))

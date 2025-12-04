@@ -3,10 +3,8 @@
 
 def f(x,y):
     count = 0
-    for x in range(x,y):
+    for x in range(x,y+1):
         if x < 0 and x % 2 == 0:
             count = count + 1
     return count
-
-print(f(-12,8))
-        
+print(f(-1,11))

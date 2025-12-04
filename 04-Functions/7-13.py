@@ -3,8 +3,12 @@
 
 def f(n):
     wynik = ''
-    for i in range(1, n+1):
-        wynik = wynik + str(i)
+    for char in range(1,n+1):
+        char = str(char)
+        wynik = wynik + char
     return wynik
 
-print(f(4))
+print(f(11))   
+    
+    
+        

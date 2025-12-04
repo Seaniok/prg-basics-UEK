@@ -5,8 +5,8 @@ def f(name):
     name = str(name)
     wynik = ""
     slowa = name.split()
-    for char in slowa:
-        wynik = wynik + slowa[0]
+    for slowo in slowa:
+        wynik = wynik + slowo [0]
     return wynik
-print(f("Internet of Things")) 
+print(f("For Your Information")) 
 # Wynik: "IoT"

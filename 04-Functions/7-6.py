@@ -2,10 +2,9 @@
 
 # f("5290312400019022") returns "52**********9022"
 
-def f(card_number):
+def hide(card_number):
     card_number = str(card_number)
-    middle = '**********'
-    card_number_fixed = card_number[:2] + middle + card_number[12:16]
-    return card_number_fixed
+    card_number = card_number[0:2] + '**********' + card_number[12:17]
+    return card_number
     
-print(f('5290312400019026'))
+print(hide('5290312400019026'))

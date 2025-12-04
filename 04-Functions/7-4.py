@@ -4,9 +4,7 @@
 # The number of letter 'e': 7
 def f(sentence):
     count = 0
-    for letter in sentence:
-        if letter == 'e':
+    for char in sentence:
+        if char == 'e':
             count = count + 1
     return count
-user_input = str(input('Enter text: '))
-print(f'The number of letter "e": {f(user_input)}')

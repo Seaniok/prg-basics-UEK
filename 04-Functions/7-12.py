@@ -4,5 +4,4 @@
 def f(n):
     asterisks = '*' + (n-1) * '/*'
     return asterisks
-
-print(f(4))
+print(f(1))

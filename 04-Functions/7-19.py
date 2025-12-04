@@ -4,11 +4,11 @@
 
 def f(number):
     wynik = 0
-    number_s = str(number)
-    for char in number_s:
-        if number_s.count(char) > 1:
-            char = int(char)
-            wynik = wynik + char
+    number = str(number)
+    for x in number:
+        if number.count(x) > 1:
+            x = int(x)
+            wynik = wynik + x
     return wynik
 
 print(f(230335))
