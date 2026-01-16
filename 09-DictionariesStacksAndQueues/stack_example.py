@@ -13,9 +13,29 @@ on the top is the first one you'll take off.
 cards = queue.LifoQueue()
 
 # adds elements to the top of the stack
-cards.put('King of Hearts \u2665')    
-cards.put('Queen of Diamonds \u2666')  
-cards.put('Jack of Spades \u2660')     
+# cards.put('King of Hearts \u2665')    
+# cards.put('Queen of Diamonds \u2666')  
+# cards.put('Jack of Spades \u2660')
+cards.put(2)
+cards.put(3)
+cards.put(7)
+cards.put(4)
+cards.put(1)
+cards.put(9) #Przy dodawaniu zabiera dwie ostatnie liczby za pomoca funkcji .get() i printuje od 3 elementu od dołu
+cards.put(8)     
+
+num1 = cards.get()
+num2 = cards.get()
+suma = num1 + num2
+print('Suma:', suma)
+
+suma_reszty_liczb = 0
+
+while not cards.empty():
+    element = cards.get()
+    suma_reszty_liczb = suma_reszty_liczb + element
+
+print('Suma reszty liczb:', suma_reszty_liczb)
 
 ## prints number of elements of the stack
 print('Number of stack elements:', cards.qsize())
