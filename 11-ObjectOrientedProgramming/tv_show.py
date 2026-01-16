@@ -11,8 +11,10 @@ def main():
    telewizja.show_status()
    telewizja.turn_off()
    telewizja.show_status()
-   telewizja.set_channel(5)
    telewizja.show_status()
+   lista = ["TVP1", "TVP2", "Polsat", "TVN", "Filmbox", "Discovery"]
+   telewizja.set_channels(5)
+   telewizja.show_channels()
 
 
 if __name__ == "__main__":
