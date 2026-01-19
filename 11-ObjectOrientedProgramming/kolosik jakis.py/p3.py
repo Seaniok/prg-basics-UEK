@@ -13,3 +13,4 @@ def f(vname):
     
 if __name__ == '__main__':
     print(f('aBC'))
+    print(f('abcdef'))
